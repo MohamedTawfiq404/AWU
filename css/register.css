@@ -1,0 +1,44 @@
+.main{
+    background-color: white;
+    width: 300px;
+    margin-inline:auto ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px 1px ;
+    color: rgb(3, 73, 119);
+}
+form{
+    line-height: 30px;
+    margin-top: 1rem;
+    text-align: left;
+}
+label{
+    display: block;
+}
+.form-check-label{
+    display: inline-block;
+}
+button{
+    background-color: rgb(15, 90, 187);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: x-small;
+}
+button:active{
+    scale: 0.8;
+}
+button:hover{
+    background-color: rgb(7, 55, 117);
+}
+
+
+/* media----------- */
+@media(width < 600px){
+    .main{
+        width: 200px;
+        font-size: x-small;
+    }
+}

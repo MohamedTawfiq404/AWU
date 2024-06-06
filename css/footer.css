@@ -1,0 +1,46 @@
+
+footer{
+    background-color: rgb(2, 15, 32);
+    color: white;
+    text-align: center;
+    height: 50px;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .scroll-up{
+    position: fixed;
+    text-decoration: none;
+    background-color: rgb(1, 19, 44);
+    padding: 3px 6px;
+    font-size: small;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.685);
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+footer a:active{
+    scale: 0.8;
+}
+footer .scroll-up:hover{
+    background-color: rgb(6, 32, 68);
+}
+footer i{
+    color: white;
+}
+footer span{
+    color: rgb(255, 166, 0);
+    font-weight: 500;
+}
+
+/* media---------------------------------- */
+@media(width < 600px){
+    footer{
+        height: 70%;
+    }
+    footer a{
+     font-size: x-small;
+    }
+}

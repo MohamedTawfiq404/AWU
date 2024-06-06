@@ -1,0 +1,119 @@
+/* main start--------------------------- */
+.main{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+.main .carts .product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    background-color: white;
+    border-top: 3px solid rgb(24, 109, 189);
+    padding-inline: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px 1px ;
+}
+.main .carts .product:hover{
+    color: rgb(19, 89, 146);
+}
+.main .carts .product span{
+    color: white;
+    background-color: rgb(14, 82, 146);
+    padding: 1px 4px;
+    border-radius: 50%;
+    font-size: x-small;
+    margin-inline: 5px;
+}
+.main .carts .product button{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(252, 55, 55);
+    border: none;
+    padding: 5px;
+}
+.main .carts .product button:active{
+    scale: 0.8;
+}
+.main .carts .product button:hover{
+    color: rgb(197, 18, 18);
+    background-color: rgb(230, 230, 230);
+    border-radius: 50%;
+}
+/* clear button */
+.main .clear-button button{
+    background-color: rgb(255, 32, 32);
+    color: white;
+    padding: 4px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.main .clear-button button:active{
+    scale: 0.8;
+}
+.main .clear-button button:hover{
+    background-color: rgb(197, 18, 18);
+}
+.main .clear-button button i{
+    margin-right: 3px;
+    font-weight:300;
+}
+.main .summary{
+    background-color: white;
+    width: 200px;
+    margin-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px 1px ;
+    margin-inline: auto;
+    border-radius: 5px;
+    padding: 10px;
+}
+.main .summary h2{
+    border-bottom: 1px solid rgba(28, 92, 153, 0.315);
+}
+.main .summary .summary-p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+}
+.main .summary button{
+    background-color: rgb(28, 105, 177);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size:12px ;
+}
+.main .summary button:active{
+    scale: 0.8;
+}
+.main .summary button:hover{
+    background-color: rgb(15, 79, 139);
+}
+.main .summary .please{
+    margin-top: 8px;
+}
+.main .summary .please a{
+    text-decoration: none;
+    color: rgb(211, 26, 26);
+    font-size: x-small;
+    font-weight: 500;  
+}
+.main .summary .please a:hover{
+    border-bottom: 1px solid;
+}
+
+
+
+
+/* media---------------------------------- */
+@media (width < 600px){
+    .main.main .carts .product{
+            width: 180px;
+        }
+}

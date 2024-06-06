@@ -1,0 +1,82 @@
+.main{
+    background-color: white;
+    width: 500px;
+    margin-inline: auto;
+    padding: 7px 12px;
+    line-height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 1px 1px ;
+    border-radius: 5px;
+}
+.main .main-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main .main-flex .content .content-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.main h1{
+    color: rgb(6, 69, 139);
+}
+.main .main-flex .content p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.main .main-flex .content .content-flex p{
+    color: rgb(214, 24, 24);
+    font-weight: 800;
+} 
+.main .main-flex .content button{
+    background-color: rgb(15, 90, 187);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: x-small;
+}
+.main .main-flex .content button:active{
+    scale: 0.8;
+}
+.main .main-flex .content button:hover{
+    background-color: rgb(7, 55, 117);
+}
+.main .main-flex .content i{
+    margin-inline: 5px;
+}
+
+
+
+
+
+
+
+/* media----------- */
+@media (width < 600px){
+    .main{
+        width: 250px;
+    }
+    .main h1{
+        font-size: x-large;
+    }
+    .main .main-flex .content .content-flex p{
+        font-size: small;
+    } 
+    .main .main-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .main-flex .content p{
+        font-weight: 400;
+    }
+    .main .main-flex .content .content-flex{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+}
